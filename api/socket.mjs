@@ -1,7 +1,7 @@
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import { version, validate } from 'uuid';
-import ACTIONS from '../src/socket/actions.js';
+import ACTIONS from '../src/socket/actions.ts';
 
 const server = createServer();
 const io = new Server(server, {
