@@ -10,13 +10,13 @@ export default function Main() {
   const rootNode = useRef();
 
   useEffect(() => {
-    socket.on(ACTIONS.SHARE_ROOMS, ({ rooms = [] } = {}) => {
+    socket.on(ACTIONS.SHARE_ROOMS, ({rooms = []} = {}) => {
       if (rootNode.current) {
         updateRooms(rooms);
       }
     });
   }, []);
-
+  
   const handleClickJoinRoom = (roomID: string) => {
     navigate(`/room/${roomID}`);
   }
