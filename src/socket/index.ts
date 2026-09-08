@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 const SERVER_URL = import.meta.env.PROD
-  ? 'https://.app'
+  ? 'https://video-lilac-nu.vercel.app/'
   : 'http://localhost:5173';
 
 const options = {
