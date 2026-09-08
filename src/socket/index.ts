@@ -9,7 +9,7 @@ const options = {
   reconnectionAttempts: Infinity,
   timeout: 10000,
   transports: ['websocket', 'polling'],
-  path: '/socket/socket.io',
+  path: 'api/socket/socket.io',
 };
 
 const socket = io(SERVER_URL, options);
