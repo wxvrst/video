@@ -1,0 +1,17 @@
+@import "tailwindcss";
+:root {
+	font: 18px/145% var(--sans);
+	letter-spacing: 0.18px;
+
+	color: #ebebeb;
+	background: #1a1f1c;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	width: 100dvw;
+	height: 100dvh;
+	overflow: hidden;
+}
